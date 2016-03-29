@@ -30,11 +30,11 @@ Todas as mensagens de erro devem ter o formato:
 
 * Responder o código de status HTTP apropriado
 * Em caso de sucesso, retorne o usuário, mais os campos:
-    * `id`: id do usuário (pode ser o próprio gerado pelo banco, porém seria interessante se fosse um GUID)
+    * `id`: id do usuário (pode ser o próprio gerado pelo banco, porém seria interessante se fosse um UUID)
     * `created`: data da criação do usuário
     * `modified`: data da última atualização do usuário
     * `last_login`: data do último login (no caso da criação, será a mesma que a criação)
-    * `token`: token de acesso da API (pode ser um GUID ou um JWT)
+    * `token`: token de acesso da API (pode ser um UUID ou um JWT)
 
 * Caso o e-mail já exista, deverá retornar erro com a mensagem "E-mail já existente".
 * O token deverá ser persistido junto com o usuário
@@ -55,12 +55,14 @@ Todas as mensagens de erro devem ter o formato:
 
 ## Requisitos
 * Banco de dados em memória, como HSQLDB.
-* Gestão de dependências via gerenciador de pacotes.
-* Persistência com ferramenta de ORM adequada.
-* Escolha livre de framework.
+* Processo de build via Gradle.
+* Persistência com Hibernate.
+* Framework Spring.
 * Prazo de 4 dias corridos.
 * Entregar um repo público (github ou bitbucket) com o código fonte.
 * Entregar a API rodando em algum host (Heroku, AWS, etc).
+* Servidor Tomcat ou Jetty Embedded 
+* Java 7+
 
 
 ## Requisitos desejáveis
