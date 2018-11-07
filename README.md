@@ -67,7 +67,7 @@ Todos los mensajes deben seguir el formato:
 * Criptogafia não reversível (hash) na senha e no token
 
 
-#Desafio Java  Alphé Salas
+# Desafio Java  Alphé Salas
 
 Realizado con los framework y api siguientes
  
@@ -80,7 +80,7 @@ Realizado con los framework y api siguientes
 * Graddle
 * Spring Tool Suit 4.1 for Eclipse
 
-##USO: Applicacion desplegada en HEROKU.com
+## USO: Applicacion desplegada en HEROKU.com
 
 * Insertar un usuario
 
