@@ -1,0 +1,36 @@
+buildscript {
+	ext {
+		springBootVersion = '2.1.1.RELEASE'
+	}
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'br.com'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.7'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.7.0'
+	compile group: 'org.passay', name: 'passay', version: '1.0'
+	compile 'org.springframework.boot:spring-boot-starter-security'
+	testCompile group: 'org.hsqldb', name: 'hsqldb', version: '2.0.0'
+	runtimeOnly 'org.hsqldb:hsqldb'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
