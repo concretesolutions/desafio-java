@@ -49,7 +49,6 @@ public class UserController {
 		final Validator validator = factory.getValidator();
 		final Set<ConstraintViolation<UserRequestDto>> violations = validator.validate(userRequestDto);
 		if (!violations.isEmpty()) {
-			violations.iterator().next().getMessage();
 			final String errorsString = violations.stream().map(x -> x.getMessage()).reduce((a, b) -> a + ", " + b).get();
 			throw new ValidateException(errorsString.toString());
 		}
