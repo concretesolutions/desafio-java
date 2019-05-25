@@ -53,7 +53,7 @@ Todos los mensajes deben seguir el formato:
 * Framework Spring.
 * Plazo de 4 días corridos.
 * Entrega en un repositorio público (github o bitbucket) con el código fuente.
-* Entrega de la API funcionando en algún host (Heroku, AWS, etc).
+* Entrega de la API funcionando en algún host (Heroku, AWS, etc) en el puerto 80 o 443.
 * Servidor Tomcat o Jetty Embedded
 * Java 7+
 ## Requisitos deseables
