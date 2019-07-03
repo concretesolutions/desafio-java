@@ -60,7 +60,7 @@ Todas as mensagens de erro devem ter o formato:
 * Framework Spring.
 * Prazo de 4 dias corridos.
 * Entregar um repo público (github ou bitbucket) com o código fonte.
-* Entregar a API rodando em algum host (Heroku, AWS, etc).
+* Entregar a API rodando em algum host (Heroku, AWS, etc) na porta 80 ou 443.
 * Servidor Tomcat ou Jetty Embedded 
 * Java 7+
 
