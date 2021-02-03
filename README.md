@@ -12,8 +12,7 @@ O desafio consiste em uma jornada de usuário, onde:
 * Utilizar JSON como media type em todos os endpoints, inclusive os de erro.
 * Banco de dados em memória, pode ser HSQLDB, H2 etc...
 * Persistência com Hibernate.
-* Framework Spring.
-* Utilizar servidor tomcat ou jetty embedded.
+* Framework Spring Boot.
 * Prazo de 4 dias corridos.
 * Entregar um repo público (github ou bitbucket) com o código fonte.
 * Java 7+.
