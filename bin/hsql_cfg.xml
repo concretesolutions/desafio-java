@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean id="hqlServer" class="org.hsqldb.server.Server" init-method="start" destroy-method="stop">
+		<property name="properties">
+			<bean class="org.hsqldb.persist.HsqlProperties">
+				<constructor-arg>
+					<props>
+						<prop key="server.database.0">mem:desafiodb</prop>
+						<prop key="server.dbname.0">desafiodb</prop><!--DB name for network connection-->
+						<prop key="server.no_system_exit">true</prop>
+						<prop key="server.port">9001</prop><!--default port is 9001-->
+					</props>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+	
+</beans>
